@@ -2,49 +2,181 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Basava Prabhu | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Jeevan / Prabhu</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="profile">
+      <div class="dp">JG</div>
+      <h2 id="userName">Your Name</h2>
+      <p class="role">Cybersecurity • Web Developer</p>
+    </div>
 
-<header>
-  <h1>Basava Prabhu</h1>
-  <p>Cybersecurity & Full-Stack Developer</p>
-  <button onclick="scrollToSection()">Explore</button>
-</header>
+    <nav class="side-nav">
+      <a href="#dashboard" class="active">🏠 Dashboard</a>
+      <a href="#skills">⚡ Skills</a>
+      <a href="#projects">📁 Projects</a>
+      <a href="#certificates">🏅 Certificates</a>
+      <a href="#contact">📩 Contact</a>
+    </nav>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    Computer Science student focused on building secure, scalable and modern web
-    applications with a cybersecurity mindset.
-  </p>
-</section>
+    <div class="sidebar-footer">
+      <button id="themeBtn" class="btn">Toggle Theme</button>
+    </div>
+  </aside>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="grid">
-    <span>HTML</span><span>CSS</span><span>JavaScript</span>
-    <span>Python</span><span>SQL</span><span>Cybersecurity</span>
-  </div>
-</section>
+  <!-- Main Content -->
+  <main class="main">
+    <!-- Dashboard -->
+    <section id="dashboard" class="section">
+      <div class="topbar">
+        <h1>Hello 👋 <span class="accent">I’m a Frontend Developer</span></h1>
+        <p class="subtext">
+          I build responsive websites using <b>HTML, CSS and JavaScript</b> with clean UI and best practices.
+        </p>
+      </div>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="card">
-    <h3>Online Shopping Platform</h3>
-    <p>Responsive e-commerce UI using HTML, CSS & Bootstrap.</p>
-  </div>
-  <div class="card">
-    <h3>To-Do List App</h3>
-    <p>JavaScript task manager with local storage.</p>
-  </div>
-</section>
+      <div class="cards">
+        <div class="info-card">
+          <h3>🎯 Career Goal</h3>
+          <p>Get placed in a tech company and work on real-world web & security projects.</p>
+        </div>
 
-<footer>
-  <p>© 2026 Basava Prabhu</p>
-</footer>
+        <div class="info-card">
+          <h3>📍 Location</h3>
+          <p>Bengaluru / Raichur, Karnataka</p>
+        </div>
 
-<script src="script.js"></script>
+        <div class="info-card">
+          <h3>🎓 Graduation</h3>
+          <p>2026 (CSE - Cybersecurity)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2 class="title">Skills</h2>
+
+      <div class="skill-grid">
+        <div class="skill-box">
+          <h3>Technical Skills</h3>
+          <div class="chips">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+            <span>Python</span>
+            <span>SQL</span>
+            <span>Wireshark</span>
+            <span>Autopsy</span>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Problem Solving</li>
+            <li>Time Management</li>
+            <li>Communication</li>
+            <li>Adaptability</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2 class="title">Projects</h2>
+      <p class="desc">Here are my key projects with short explanations.</p>
+
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3>🛡 Autonomous Monitoring System</h3>
+          <p class="brief">
+            A cybersecurity monitoring project that detects threats like <b>DDoS</b>, <b>Brute Force</b> and
+            <b>Vulnerability Exploits</b> using SIEM concepts.
+          </p>
+          <div class="tags">
+            <span>SIEM</span>
+            <span>Threat Detection</span>
+            <span>Cybersecurity</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3>✅ To-Do List Web App</h3>
+          <p class="brief">
+            A task manager where users can <b>add, edit, delete</b> tasks with <b>localStorage support</b>
+            so the tasks stay saved even after refresh.
+          </p>
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h3>🛒 Online Shopping Platform</h3>
+          <p class="brief">
+            A responsive e-commerce UI where users can browse products and simulate an online store experience.
+            Built using <b>HTML + CSS + Bootstrap</b>.
+          </p>
+          <div class="tags">
+            <span>Bootstrap</span>
+            <span>Responsive UI</span>
+            <span>E-commerce</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates" class="section">
+      <h2 class="title">Certificates</h2>
+
+      <div class="cert-grid">
+        <div class="cert">Static Website Development</div>
+        <div class="cert">Responsive Website Design</div>
+        <div class="cert">JavaScript Essentials</div>
+        <div class="cert">Introduction to Databases</div>
+        <div class="cert">Programming Foundations with Python</div>
+        <div class="cert">Dynamic Web Application</div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2 class="title">Contact</h2>
+
+      <div class="contact-box">
+        <p><b>Email:</b> <span id="email">yourmail@gmail.com</span></p>
+        <p><b>Phone:</b> <span id="phone">+91 XXXXXXXXXX</span></p>
+        <p><b>LinkedIn:</b> <a id="linkedin" href="#" target="_blank">View Profile</a></p>
+      </div>
+
+      <form id="contactForm" class="form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message..." required></textarea>
+        <button class="btn send" type="submit">Send Message</button>
+        <p id="status"></p>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Portfolio Website | Built with HTML CSS JS</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
